@@ -1,0 +1,18 @@
+<h2>Produktbeschreibung</h2>
+
+<div *ngIf="product">
+  <h3>{{product.name}}</h3>
+  <img src="{{product.image}}">
+  <h4>{{product.price}} € Hersteller: {{product.produced}}</h4>
+  <p>Beschreibung: {{product.description}}</p>
+
+  <h3>
+    {{productCount}}
+    <button (click)="addCount()">+</button>
+    <button (click)="removeCount()">-</button>
+    <p>Preis: {{cartPrice}} €</p>
+    <p style=""> {{product.availableCount}} Stk. verfügbar.</p>
+  </h3>
+
+  <button (click)="addToCart(product)">In den Warenkorb</button>
+</div>

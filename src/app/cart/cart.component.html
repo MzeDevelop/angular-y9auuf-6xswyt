@@ -1,0 +1,34 @@
+<h3>Einkaufswagen</h3>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="address">
+      Adresse
+    </label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+
+  <div>
+    <label for="IBAN">
+      IBAN
+    </label>
+    <input id="IBAN" type="text" formControlName="address">
+  </div>
+  <button class="button" type="submit">Kaufen</button>
+</form>
+
+<p>
+  <a routerLink="/shipping">Lieferkosten</a>
+</p>
+<div class="cart-item" *ngFor="let item of items">
+  <span>{{item.name}}</span>
+  <span>{{item.price}} €</span>
+  <span>Anzahl: {{item.CartCount}}</span>
+</div>
+<h1>Summe: {{totalPrice}} €</h1>

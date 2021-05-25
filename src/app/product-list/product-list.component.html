@@ -1,0 +1,35 @@
+<h2>Produkte</h2>
+
+<div *ngFor="let product of products">
+  <!-- Foreach schleife -->
+  <h3>
+    <a [title]="product.name + ' Details'" [routerLink]="['/products', product.id]">
+      <!-- [] = Propertybinding | Hyperlink mit a -->
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="product.image">
+    <img [routerLink]="['/products', product.id]" src="{{product.image}}">
+  </p>
+
+  <!-- <p *ngIf="product.description">
+    Beschreibung: {{ product.description }}
+  </p> -->
+
+  <p *ngIf="product.produced">
+    {{ product.produced }}
+  </p>
+
+  <p *ngIf="product.availableCount">
+    Noch {{ product.availableCount }} Stk. verfügbar.
+  </p>
+
+
+  <app-product-alerts [product]="product" (notify)="onNotify()">
+  </app-product-alerts>
+
+  <span  layout="row">
+    <hr flex/>
+  </span>
+</div>
