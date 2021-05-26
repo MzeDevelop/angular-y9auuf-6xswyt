@@ -1,4 +1,8 @@
-<h2>Produkte</h2>
+<h2 class="hUberschrift">Produkte</h2>
+
+<p class="txtMessage">
+    Alles für die Technik
+  </p>
 
 <div *ngFor="let product of products | async">
   <!-- Foreach schleife -->
@@ -9,8 +13,12 @@
     </a>
   </h3>
 
-  <p class="rabatt" *ngIf="product.price < 500 && product.availableCount > 0">
-    Stark reduziert!
+  <p class="rabatt" *ngIf="product.rabatt">
+    Angebot
+  </p>
+
+  <p class="rabatt" *ngIf="product.used">
+    Nicht Lieferbar!
   </p>
 
   <p *ngIf="product.image">
@@ -30,11 +38,8 @@
     Das Produkt ist momentan ausverkauft!
   </p>
 
-
-
-
-  <p *ngIf="product.availableCount">
-    Noch {{ product.availableCount }} Stk. verfügbar.
+  <p style="color:green" *ngIf="product.availableCount">
+    {{ product.availableCount }} Stk. verfügbar
   </p>
 
 

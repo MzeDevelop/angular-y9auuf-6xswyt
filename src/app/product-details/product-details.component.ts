@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Product, products } from '../products';
+import { Product } from '../products';
+import { ProductService } from '../product.service';
 import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
-  styleUrls: ['./product-details.component.css']
+  styleUrls: ['./product-details.component.css', '../css_Style/productListAlertStyle.css']
 })
 export class ProductDetailsComponent implements OnInit {
   product;
@@ -14,7 +15,8 @@ export class ProductDetailsComponent implements OnInit {
   cartPrice: number;
   constructor(
     private route: ActivatedRoute,
-    private cartService: CartService
+    private cartService: CartService,
+    private productService: ProductService
   ) {}
 
   addCount() {
@@ -38,8 +40,17 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit() {
     const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute = Number(routeParams.get('productId'));
+    this.productService
+      .getProducts()
+      .subscribe(
+        products => {
+          this.product = products.find(
+            product => product.id == productIdFromRoute
+          )
+          this.cartPrice = this.product.price;
+        }
+      );
 
-    this.product = products.find(product => product.id == productIdFromRoute);
-    this.cartPrice = this.product.price;
+    
   }
 }

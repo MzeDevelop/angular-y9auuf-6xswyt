@@ -1,23 +1,98 @@
-
 [
   {
-    "id": "Overnight",
-    "name": "IPhone 7, Rose Gold",
-    "price": 500,
-    "availableCount": 0,
-    "description": "Generalüberholt(Leichte Kratzer, Defekter Homebutton, Akkukappazität bei 30%)",
-    "produced": "Apple Generalüberholt",
+    "id": "5",
+    "name": "Apple MacBook Air - 13",
+    "price": 900.00,
+    "availableCount": 20,
+    "description": "Core i5 1,6 GHz 33,8 cm",
+    "produced": "Apple",
     "manufacturedImage": "",
-    "image": "https://media.kaufland-online.de/images/items/300x300/d6b87110ebe32e06c47f3c56e1bfbeed.jpg"
+    "image": "https://media.kaufland-online.de/images/items/300x300/22f8d8bee1e4062182e06404f72c7f69.jpg",
+    "rabatt": false,
+    "used": false
   },
-{
-    "id": "Overnight",
-    "name": "IPhone 7, Rose Gold",
-    "price": 500,
-    "availableCount": 0,
-    "description": "Generalüberholt(Leichte Kratzer, Defekter Homebutton, Akkukappazität bei 30%)",
-    "produced": "Apple Generalüberholt",
+  {
+    "id": "2",
+    "name": "Apple AirTag Weiß-Silber 1 St.",
+    "price": 30.99,
+    "availableCount": 200,
+    "description": "Keine Beschreibung verfügbar",
+    "produced": "Apple",
     "manufacturedImage": "",
-    "image": "https://media.kaufland-online.de/images/items/300x300/d6b87110ebe32e06c47f3c56e1bfbeed.jpg"
+    "image": "https://asset.conrad.com/media10/isa/160267/c1/-/de/002369059PI00/apple-airtag-weiss-silber-1-st.jpg?x=300&y=300",
+    "rabatt": false,
+    "used": false
+  },
+  {
+    "id": "1",
+    "name": "HP ENVY x360 Convertible",
+    "price": 1200.99,
+    "availableCount": 28,
+    "description": "15-ed1477ng 39.6 cm (15.6 Zoll) Full HD 2-in-1 Notebook / Tablet Intel® Core™ i7 i7-1165G7 16",
+    "produced": "HP Hawlett Packard",
+    "manufacturedImage": "",
+    "image": "https://asset.conrad.com/media10/isa/160267/c1/-/de/002329084PI00/hp-envy-x360-convertible-15-ed1477ng-39-6-cm-15-6-zoll-full-hd-2-in-1-notebook-tablet-intel-core-i7-i7-1165g7-16.jpg?x=300&y=300&format=jpg&ex=300&ey=300&align=center",
+    "rabatt": false,
+    "used": false
+  },
+  {
+    "id": "3",
+    "name": "IPhone 12",
+    "price": 899.99,
+    "availableCount": 20,
+    "description": "Speicherkapazität 128 GB Betriebssystem iOS Kameraauflösung 15 Megapixel; OVP Neu",
+    "produced": "Apple",
+    "manufacturedImage": "",
+    "image": "https://media.kaufland-online.de/images/items/300x300/6b4beb57ca003cc4c8582635807452aa.jpg",
+    "rabatt": false,
+    "used": false
+  },
+  {
+    "id": "6",
+    "name": "iPhone X 64 Gb - Space Grau",
+    "price": 520.98,
+    "availableCount": 10,
+    "description": "64 GB, OLED, OVP",
+    "produced": "Apple",
+    "manufacturedImage": "",
+    "image": "https://d1eh9yux7w8iql.cloudfront.net/product_images/product_images/36834_efd45da5-a374-4c62-8b7b-7ceb2c86c0ae-thumb.jpg",
+    "rabatt": false,
+    "used": false
+  },
+  {
+    "id": "7",
+    "name": "7200DPI Gaming Maus PC Wired Mouse RGB Beleuchtung/ 8 Programmierbaren Computer",
+    "price": 6.98,
+    "availableCount": 0,
+    "description": "Wired Mouse, 7200DPI",
+    "produced": "PICTEK",
+    "manufacturedImage": "",
+    "image": "https://i.ebayimg.com/images/g/oSEAAOSwUJtgQY7V/s-l300.jpg",
+    "rabatt": false,
+    "used": false
+  },
+  {
+    "id": "8",
+    "name": "XIAOMI 34' MI curved Gaming",
+    "price": 560.99,
+    "availableCount": 30,
+    "description": "UWGHD 3440x1440 / 21:9 / 4ms / 144 Hz / 2x HDMI, 2x DisplayPort / FreeSync Prem. / curved / Gaming, Farbe:Schwarz",
+    "produced": "XIAOMI",
+    "manufacturedImage": "",
+    "image": "https://media.kaufland-online.de/images/items/300x300/03870d64a1c5c56c5a88d778d75e62f9.jpg",
+    "rabatt": false,
+    "used": false
+  },
+  {
+    "id": "4",
+    "name": "Sony Playstation 5 White",
+    "price": 1250.98,
+    "availableCount": 0,
+    "description": "Speicherkapazität 1 TB Zubehör: Controller, Ladekabel, HDMI Kabel",
+    "produced": "Sony Interactive",
+    "manufacturedImage": "",
+    "image": "https://www.reviews.org/app/uploads/2020/10/PlayStation-5-Digital-Edition-300x300.png",
+    "rabatt": false,
+    "used": false
   }
 ]

@@ -1,4 +1,4 @@
-<h3>Einkaufswagen</h3>
+<h3 class="hUberschrift">Einkaufswagen</h3>
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
   <div>
     <label for="name">
@@ -15,6 +15,13 @@
   </div>
 
   <div>
+    <label for="Mail">
+      E-Mail
+    </label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+
+  <div>
     <label for="IBAN">
       IBAN
     </label>
@@ -22,6 +29,8 @@
   </div>
   <button class="button" type="submit">Kaufen</button>
 </form>
+<br>
+<button class="button" type="submit">Anfragen</button>
 
 <p>
   <a routerLink="/shipping">Lieferkosten</a>

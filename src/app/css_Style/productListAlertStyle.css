@@ -9,14 +9,32 @@
   background-color: #f5f7fa;
 }
 
+.txtMessage {
+  color: black;
+  border: 4px solid red;
+  padding: 10px;
+  font-size: 15px;
+  border-style: none;
+  border-left-style: solid;
+  border-right-style: solid;
+  background-color: #f5f7fa;
+}
+
 .rabatt{
   color: red;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  border: 2px solid black;
-  background-color: #f5f7fa;
+  border: 2px solid red;
+  /* background-color: #f5f7fa; */
   padding: 8px;
   border-radius: 20px;
   position: absolute;
   border-style: dotted;
+}
+
+.hUberschrift{
+  color: black;
+  font-size: 22px;
+  background-color: rgb(255, 255, 255);
+
 }
