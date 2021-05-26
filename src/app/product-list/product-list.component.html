@@ -1,6 +1,6 @@
 <h2>Produkte</h2>
 
-<div *ngFor="let product of products">
+<div *ngFor="let product of products | async">
   <!-- Foreach schleife -->
   <h3>
     <a [title]="product.name + ' Details'" [routerLink]="['/products', product.id]">
@@ -8,6 +8,10 @@
       {{ product.name }}
     </a>
   </h3>
+
+  <p class="rabatt" *ngIf="product.price < 500 && product.availableCount > 0">
+    Stark reduziert!
+  </p>
 
   <p *ngIf="product.image">
     <img [routerLink]="['/products', product.id]" src="{{product.image}}">
@@ -21,9 +25,18 @@
     {{ product.produced }}
   </p>
 
+
+  <p class="lowCount" *ngIf="product.availableCount < 1">
+    Das Produkt ist momentan ausverkauft!
+  </p>
+
+
+
+
   <p *ngIf="product.availableCount">
     Noch {{ product.availableCount }} Stk. verfügbar.
   </p>
+
 
 
   <app-product-alerts [product]="product" (notify)="onNotify()">
